@@ -10,8 +10,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "ErikSDK",
-            url: "https://github.com/suhailp-eccentric/erik-sierra-ios-sdk/releases/download/2.0.0/ErikSDK.xcframework.zip",
-            checksum: "a893f23de0c65e9d941c73d24f71caa1361daccff30330fedd085750c2c24c98"
+            url: "https://github.com/suhailp-eccentric/erik-sierra-ios-sdk/releases/download/2.0.1/ErikSDK.xcframework.zip",
+            checksum: "97b8be7e44b0403305bcb82c830f79d5693f808fe40dd49ce94cc2ea08627a51"
         ),
     ]
 )
