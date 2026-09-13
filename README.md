@@ -9,9 +9,17 @@ https://github.com/suhailp-eccentric/erik-sierra-ios-sdk.git
 ```
 
 The package downloads `ErikSDK.xcframework.zip` from the matching GitHub
-Release. The binary contains device and simulator slices and all required SDK
-resources. The current package version is `1.0.0`. Rebuild it from source with:
+Release. The binary contains device and simulator slices. Vehicle packages are
+downloaded and stored by `ErikSDK`. Prepare the selected package with
+`ErikVehiclePackages.prepareVehicle(_:)`, then create the view from the prepared
+handle with `ErikViewController.make(for:)`. The current package version is
+`2.0.0`.
 
-```bash
-./scripts/build_xcframework.sh
-```
+Use the integration guide supplied with the client sample for a complete screen,
+loading and error handling, controls, and cleanup. In the SDK source checkout,
+the canonical guide is `CLIENT_README.md` and the complete sample is in
+`Sample/ErikUIKitSample`.
+
+For current source builds, prepare with `try await ErikVehiclePackages.prepare(vehicle)`,
+create with `ErikViewController.make(for:initialState:)`, observe `onPhaseChanged`,
+and attach the controller. Existing completion-handler APIs remain supported.
