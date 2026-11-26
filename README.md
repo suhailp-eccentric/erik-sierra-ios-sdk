@@ -13,7 +13,7 @@ Release. The binary contains device and simulator slices. Vehicle packages are
 downloaded and stored by `ErikSDK`. Prepare the selected package with
 `ErikVehiclePackages.prepareVehicle(_:)`, then create the view from the prepared
 handle with `ErikViewController.make(for:)`. The current package version is
-`2.0.1`.
+`2.0.2`.
 
 Use the integration guide supplied with the client sample for a complete screen,
 loading and error handling, controls, and cleanup. In the SDK source checkout,
